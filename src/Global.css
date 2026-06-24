@@ -1,0 +1,217 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Barlow Condensed", "Bellefiar;", sans-serif;
+}
+
+.body {
+    width: 100%;
+    height: 100vh;
+    background-image: url('./assets/home/background-home-desktop.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.link-underline:hover {
+    border-bottom: 3px solid white;
+
+}
+
+.navbar-links {
+    height: 70px;
+    /* backdrop-filter: blur(10px); */
+    /* -webkit-backdrop-filter: blur(10px); */
+    background-color: rgba(128, 128, 128, 0.2);
+}
+
+.navbar-links a:hover {
+    color: #ffffff;
+
+}
+
+.Homebody {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    padding-top: 10px;
+
+}
+
+.Homebody-text {
+    color: white;
+}
+
+.Space {
+    font-size: 150px;
+
+}
+
+.circle {
+    color: black;
+    background-color: white;
+    border-radius: 100%;
+    height: 250px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.circle::before {
+    content: "";
+    position: absolute;
+
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+
+    background-color: rgba(255, 255, 255, 0.3);
+
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 0.3s ease;
+}
+
+.circle:hover::before {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.Destination-body {
+    width: 100%;
+    height: 100vh;
+    background-image: url('./assets/destination/background-destination-desktop.jpg');
+    background-position: center;
+    background-size: cover;
+
+}
+
+.navbody {
+    background-color: transparent;
+}
+
+.pickdestination {
+    color: white;
+    gap: 2px;
+    font-size: 30px;
+    padding-left: 200px;
+    padding-top: 50px;
+}
+
+.planetbody {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.planetimg {
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.planetbuttons {
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    gap: 20px;
+}
+
+.planetbutton {
+
+    width: 40px;
+    height: 30px;
+    font-size: 20px;
+    border: none;
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+
+}
+
+.planettext {
+    padding-top: 40px;
+}
+
+.planetdet {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+.act {
+    text-decoration: underline;
+}
+
+.Crew {
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-image: url('./assets/crew/background-crew-desktop.jpg');
+}
+
+.crewbody {
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.crewinfo {
+    color: white;
+    padding-top: 100px;
+}
+
+#crew {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #4a4a63;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 70px 20px;
+}
+
+#crew:checked {
+    background-color: white;
+}
+.technology{
+    width: 100%;
+    height: 100vh;
+    background-image: url('./assets/technology/background-technology-desktop.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.techinfo{
+    display: flex;
+    padding-top: 150px;
+}
+.OpButton{
+    border: 1px solid white;
+    border-radius: 100%;
+    width: 70px;
+    height: 70px;
+    background-color: transparent;
+    color: white;
+    margin-top: 20px;
+}
+.option{
+    display: flex;
+    flex-direction: column;
+    padding-right: 50px;
+}
+.techbody{
+    display: flex;
+    justify-content: space-around;
+}
+.techtext{
+    padding-top: 40px;
+}
